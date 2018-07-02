@@ -17,7 +17,7 @@ public class Boss
     public void Magic(int cost)
     {
 
-        if (mp<5)
+        if (mp<cost)
         {
             Debug.Log("MPが足りないため魔法が使えない。");
         }
@@ -41,6 +41,12 @@ public class Test : MonoBehaviour
         int[] array = { 2, 5, 7, 1, 6, };
 
         //配列の要素をすべて表示する
+        for (int i = 0; i < array.Length; i++)
+        {
+            Debug.Log(array[i]);
+        }
+
+        //配列の要素をすべて逆表示する
         for (int i = array.Length - 1; 0 <= i; i--)
         {
             Debug.Log(array[i]);
